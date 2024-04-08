@@ -1,4 +1,4 @@
-import App from "./App";
+import App from "./main/App";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -15,10 +15,7 @@ const router = createBrowserRouter([
       App()
     ),
   },
-  {
-    path: "about",
-    element: <div>About</div>,
-  },
+  
 ]);
 
 const rootElement = document.getElementById("root") as HTMLElement;
