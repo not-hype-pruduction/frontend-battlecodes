@@ -109,7 +109,6 @@ const App = () => {
   return (
     <>
       <div className='main-container'>
-        <Particles id="particles"></Particles>
         <NavBar></NavBar>
         <MainContainer></MainContainer>
       </div>

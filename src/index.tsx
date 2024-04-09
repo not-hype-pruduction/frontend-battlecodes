@@ -8,6 +8,8 @@ import {
   Link,
 } from "react-router-dom";
 import Auth from "./auth-pages/Auth";
+import ParticlesComponent from "./components/particles";
+import "./main/App.css";
 
 const router = createBrowserRouter([
   {
@@ -27,5 +29,8 @@ const router = createBrowserRouter([
 const rootElement = document.getElementById("root") as HTMLElement;
 
 createRoot(rootElement).render(
-  <RouterProvider router={router} />
+  <>
+    <ParticlesComponent id="particles"></ParticlesComponent>
+    <RouterProvider router={router} />
+  </>
 );
