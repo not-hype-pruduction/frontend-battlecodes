@@ -4,8 +4,6 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Auth from "./auth-pages/Auth";
 import ParticlesComponent from "./components/particles";
@@ -15,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      App()
+      App.App()
     ),
   },
   {

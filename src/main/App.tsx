@@ -1,8 +1,7 @@
-import React, { useEffect, useMemo, useState, useCallback } from "react";
+import React from "react";
 import logo from '../global-static/logo.svg';
 import './App.css';
 import { useNavigate } from 'react-router-dom';
-import Particles from "../components/particles";
 import proger from "../global-static/assets/proger.svg";
 
 
@@ -116,4 +115,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default {App, NavBar};
