@@ -1,0 +1,30 @@
+@font-face {
+    font-family: main-font;
+    src: url("../fonts/MoscowMetro.otf");
+}
+
+@font-face {
+    font-family: sub-text;
+    src: url("../fonts/ISOCPEUR.ttf");
+}
+
+::selection {
+    background-color: white; /* Изменение цвета фона выделенного текста */
+    color: black; /* Изменение цвета текста */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bigtext {
+    margin: 3%;
+    font-size: 400%;
+    font-family: sub-text;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
