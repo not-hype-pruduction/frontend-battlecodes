@@ -70,7 +70,7 @@ const ParticlesComponent = (props) => {
           width: 1,
         },
         move: {
-            direction: 90, // Set the direction as a number (for example, 90 for moving upwards)
+            direction: "none", // Set the direction as a number (for example, 90 for moving upwards)
             enable: true,
             outModes: {
               default: "bounce", // Ensure 'default' is one of the valid OutMode values
@@ -83,7 +83,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 400,
         },
         opacity: {
           value: 1.0,
