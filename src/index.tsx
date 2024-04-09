@@ -7,6 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Auth from "./auth-pages/Auth";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
       App()
     ),
   },
-  
+  {
+    path: "/login",
+    element: (
+      Auth()
+    ),
+  }
 ]);
 
 const rootElement = document.getElementById("root") as HTMLElement;
