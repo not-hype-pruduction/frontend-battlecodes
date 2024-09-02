@@ -8,20 +8,19 @@ const CarouselItem = ({gameID}) => {
         },
         bashe: {
             name: 'Баше',
-            description: 'это Баше хахахаха башенки',
+            description: 'это Баше',
         },
         chet: {
             name: 'Чет',
-            description: 'Букву Р забыли в слове Чет',
+            description: 'это игра чет',
         },
     };
 
-    console.log(gameInfo)
+    console.log("gameID" + gameID)
     return (
         <div classname = 'carousel-item'>
-            {/*<p>{gameInfo.gameID.name}</p>*/}
-            {/*<p>{gameInfo.gameID.description}</p>*/}
-            <p>{gameID}</p>
+            <p>{gameInfo[gameID].name}</p>
+            <p>{gameInfo[gameID].description}</p>
         </div>
     )
 }

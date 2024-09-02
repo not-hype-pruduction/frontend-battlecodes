@@ -1,8 +1,10 @@
 .header {
     display: flex;
-    font-size: 25px;
-    letter-spacing: 1px;
-    font-family: MontHeavy;
+    position: fixed;
+    background-color: rgba(10, 10, 2, 0.5);
+    backdrop-filter: blur(20px);
+    width: 100%;
+
 }
 
 li {
@@ -14,6 +16,9 @@ li {
 li a {
     text-decoration: none;
     color: #E0E0E0;
+    font-family: MontHeavy;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 li a:hover {
@@ -57,7 +62,7 @@ body {
 }
 
 .main-screen-background {
-    background-image: url('/public/source/images/metro.jpg');
+    background-image: url('/public/source/images/main_background.jpg');
 }
 
 .registration-button {
@@ -93,6 +98,7 @@ body {
 }
 
 .main-screen {
-    background-image: url("/public/source/images/metro.jpg");
+    background-image: url("/public/source/images/main_background.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
 }
-
