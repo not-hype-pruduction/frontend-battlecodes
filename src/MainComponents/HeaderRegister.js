@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderItem from "./HeaderLabel";
+import HeaderItem from "./HeaderItem";
 import './Main.css'
 
 const HeaderBase = () => {

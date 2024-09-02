@@ -1,7 +1,8 @@
 .header {
     display: flex;
+    font-size: 25px;
+    letter-spacing: 1px;
     font-family: MontHeavy;
-    color: red;
 }
 
 li {
@@ -15,13 +16,18 @@ li a {
     color: #E0E0E0;
 }
 
+li a:hover {
+    text-decoration: none;
+    color: #777777;
+}
+
 .header-list {
     display: flex;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 20px;
     align-content: center;
 }
@@ -39,8 +45,6 @@ li a {
     --trans: 0.135s ease-in-out;
 }
 
-/* not parallax styles */
-
 body {
     margin: 0;
     padding: 0;
@@ -48,65 +52,47 @@ body {
     font-size: 18px;
     line-height: 1.2;
     color: var(--white);
-    background-color: var(--dark-blue);
+    background-color: #282828;
     font-family: var(--main-font)
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    margin-top: 5rem;
-
-    display: grid;
-    place-items: center;
+.main-screen-background {
+    background-image: url('/public/source/images/metro.jpg');
 }
 
-.button {
-    display: grid;
-    place-items: center;
+.registration-button {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Mont SemiBold";
+    background-color: #F76C6C;
+    border-radius: 30px;
+    border-style: none;
+    padding: 3px 13px;
+    margin: 20px;
+}
 
-    font: var(--main-font);
-    color: var(--white);
-    font-size: 20px;
-    background-color: var(--green);
-    border: 0;
-    border-radius: 4px;
-    min-height: 48px;
+.registration-button:hover {
     cursor: pointer;
-    transition: background-color var(--trans);
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Mont SemiBold";
+    background-color: #db5959;
+    border-radius: 30px;
+    border-style: none;
+    padding: 3px 13px;
+    margin: 20px;
 }
 
-.button:hover {
-    background-color: var(--orange);
+.slogan {
+    font-size: 50px;
+    font-family: 'MontHeavy';
 }
 
-.title {
-    margin: 0;
-    margin-bottom: 2.5rem;
-    font-size: 48px;
+.main-screen-description {
+    font-family: "Mont SemiBold";
 }
 
-.circle {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--orange);
+.main-screen {
+    background-image: url("/public/source/images/metro.jpg");
 }
 
-.parallax {
-       width: 50%;
-       padding: 5rem;
-       min-height: 10rem;
-       position: relative;
-       overflow: hidden;
-
-       border: 1px solid var(--green);
-       border-radius: 5px;
-}
-
-.parallax__layer {
-    transition: transform 0.3s linear;
-}

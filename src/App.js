@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./MainComponents/Header";
-import TitleParallax from "./MainComponents/TitleParallax";
+import MainScreen from "./MainComponents/MainScreen";
+import InformationBlock from "./ContentComponents/InformationBlock";
+import CatalogBlock from "./ContentComponents/CatalogBlock";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-        <TitleParallax/>
+        <MainScreen/>
+        <InformationBlock
+            title={'Что такое Battlecodes'}
+            descFirstPart={'инфаинфаинфаинфаинфаинфаинфаинфа'}
+            descSecondPart={'Оттачивай свои навыки в программировании и прокачивай алгоритмическое мышление.'}/>
+        <CatalogBlock/>
     </div>
   );
 }

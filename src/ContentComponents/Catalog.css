@@ -1,0 +1,7 @@
+.carousel-item {
+    width: 377px;
+    height: 377px;
+
+    background: linear-gradient(180deg, #53E1D8 0%, #1C4065 100%);
+    border-radius: 60px;
+}
