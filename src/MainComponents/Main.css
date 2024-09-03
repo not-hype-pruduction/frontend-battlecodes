@@ -1,10 +1,22 @@
+:root {
+    --base-gray: #282828;
+    --red-base: #db5959;
+    --white: #ffffff;
+
+    --font-semi: MontSemiBold;
+    --font-heavy: MontHeavy;
+    --font-light: MontLight;
+
+    --main-font: 'Lato', sans-serif;
+    --trans: 0.135s ease-in-out;
+}
+
 .header {
     display: flex;
     position: fixed;
     background-color: rgba(10, 10, 2, 0.5);
     backdrop-filter: blur(20px);
     width: 100%;
-
 }
 
 li {
@@ -16,7 +28,7 @@ li {
 li a {
     text-decoration: none;
     color: #E0E0E0;
-    font-family: MontHeavy;
+    font-family: MontSemiBold;
     font-size: 25px;
     letter-spacing: 1px;
 }
@@ -40,24 +52,14 @@ li a:hover {
 
 
 
-:root {
-    --white: #ffffff;
-    --dark-blue: #2d2d44;
-    --green: #4eb543;
-    --orange: #e84e1b;
-
-    --main-font: 'Lato', sans-serif;
-    --trans: 0.135s ease-in-out;
-}
 
 body {
     margin: 0;
     padding: 0;
-
     font-size: 18px;
     line-height: 1.2;
     color: var(--white);
-    background-color: #282828;
+    background-color: var(--base-gray);
     font-family: var(--main-font)
 }
 
@@ -66,10 +68,10 @@ body {
 }
 
 .registration-button {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 40px;
     font-family: "Mont SemiBold";
-    background-color: #F76C6C;
+    background-color: var(--red-base);
     border-radius: 30px;
     border-style: none;
     padding: 3px 13px;
@@ -81,7 +83,7 @@ body {
     color: #FFFFFF;
     font-size: 40px;
     font-family: "Mont SemiBold";
-    background-color: #db5959;
+    background-color: var(--red-base);
     border-radius: 30px;
     border-style: none;
     padding: 3px 13px;
