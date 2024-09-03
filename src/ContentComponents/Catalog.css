@@ -89,9 +89,14 @@ p {
     margin: 10px 0;
     transition: all 0.1s ease-in-out;
 }
+
 .item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item.hovered {
+
 }
 
 /*.item:before {*/
@@ -118,3 +123,7 @@ p {
         transform: translateX(calc(-100% - 20px));
     }
 }
+
+/*catalogue-states*/
+
+

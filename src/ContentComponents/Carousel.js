@@ -28,7 +28,9 @@ const Carousel = () => {
                     <div className="item">
                         <CarouselItem gameID={'chet'}/>
                     </div>
-                    <div className="item"></div>
+                    <div className="item">
+                        <CarouselItem gameID={'nim'}/>
+                    </div>
                     <div className="item"></div>
                     <div className="item"></div>
                     <div className="item"></div>

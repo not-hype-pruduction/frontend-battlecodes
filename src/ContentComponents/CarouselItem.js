@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const CarouselItem = ({gameID}) => {
     const gameInfo = {
@@ -16,11 +16,18 @@ const CarouselItem = ({gameID}) => {
         },
     };
 
-    console.log("gameID" + gameID)
+    const [hover, setHover] = useState(false);
+    const infoToRender = hover ? gameInfo[gameID].description : gameInfo[gameID].name;
+
     return (
-        <div classname = 'carousel-item'>
-            <p>{gameInfo[gameID].name}</p>
-            <p>{gameInfo[gameID].description}</p>
+        <div
+            classname = 'carousel-item'
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+        >
+            <p>{infoToRender}</p>
+            {/*<p>{gameInfo[gameID].name}</p>*/}
+            {/*<p>{gameInfo[gameID].description}</p>*/}
         </div>
     )
 }
