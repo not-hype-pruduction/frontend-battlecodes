@@ -5,10 +5,19 @@
 
     --font-semi: MontSemiBold;
     --font-heavy: MontHeavy;
-    --font-light: MontLight;
+    --font-light: MontExtralight;
 
-    --main-font: 'Lato', sans-serif;
+    --main-font: var(--font-light);
     --trans: 0.135s ease-in-out;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--white);
+    background-color: var(--base-gray);
+    font-family: var(--main-font)
 }
 
 .header {
@@ -28,7 +37,7 @@ li {
 li a {
     text-decoration: none;
     color: #E0E0E0;
-    font-family: MontSemiBold;
+    font-family: var(--font-heavy);
     font-size: 25px;
     letter-spacing: 1px;
 }
@@ -51,18 +60,6 @@ li a:hover {
 
 
 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.2;
-    color: var(--white);
-    background-color: var(--base-gray);
-    font-family: var(--main-font)
-}
-
 .main-screen-background {
     background-image: url('/public/source/images/main_background.jpg');
 }
@@ -70,7 +67,7 @@ body {
 .registration-button {
     color: var(--white);
     font-size: 40px;
-    font-family: "Mont SemiBold";
+    font-family: var(--font-semi);
     background-color: var(--red-base);
     border-radius: 30px;
     border-style: none;
@@ -82,7 +79,7 @@ body {
     cursor: pointer;
     color: #FFFFFF;
     font-size: 40px;
-    font-family: "Mont SemiBold";
+    font-family: var(--font-semi);
     background-color: var(--red-base);
     border-radius: 30px;
     border-style: none;
@@ -92,15 +89,45 @@ body {
 
 .slogan {
     font-size: 50px;
-    font-family: 'MontHeavy';
+    font-family: var(--font-heavy);
 }
 
 .main-screen-description {
-    font-family: "Mont SemiBold";
+    font-family: var(--font-semi);
 }
 
 .main-screen {
     background-image: url("/public/source/images/main_background.jpg");
     height: 100vh;
     background-repeat: no-repeat;
+}
+
+
+/*скролл бар тест*/
+
+/*test*/
+p {
+    font-family: var(--font-light);
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8f5858;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
