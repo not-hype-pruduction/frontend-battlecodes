@@ -124,6 +124,12 @@ p {
     }
 }
 
+.carousel-item-icon {
+    width: 128px;
+    height: 128px;
+
+}
+
 /*catalogue-states*/
 
 

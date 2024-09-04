@@ -18,16 +18,15 @@ const CarouselItem = ({gameID}) => {
 
     const [hover, setHover] = useState(false);
     const infoToRender = hover ? gameInfo[gameID].description : gameInfo[gameID].name;
-
+    const gameIcon = `./source/game_icons/${gameID}_icon.png`.toString()
     return (
         <div
-            classname = 'carousel-item'
+            className = 'carousel-item'
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
             <p>{infoToRender}</p>
-            {/*<p>{gameInfo[gameID].name}</p>*/}
-            {/*<p>{gameInfo[gameID].description}</p>*/}
+            <img src = {gameIcon} className={'carousel-item-icon'}/>
         </div>
     )
 }
